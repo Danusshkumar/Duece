@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="gameStyle.css">
+    <script src="https://kit.fontawesome.com/eda4a235e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <div class = "nameAskingPopUp">
+        <div class = "closeMark"><i class="fas fa-times closeMarkInner"></i></div>
+        <h2>Enter your name</h2>
+        <input type = "text" name = "firstName" placeholder="first player">
+        <input type = "text" name = "secondName" placeholder="second player">
+        <button class = "nameSubmit">SUBMIT</button>
+    </div>
+
+    <div class = "winner"><h2></h2></div>
+
+
+    <div id="main">
+
+            <div class = "animationBubble"></div>
+            <div class = "animationBubble"></div>
+            <div class = "animationBubble"></div>
+            <div class = "animationBubble"></div>
+            <div class = "animationBubble"></div>
+
+        <div class="leftSideOfGame">
+        
+        <!-- status text -->
+        <div class="statusDisplay">Let's start</div>
+
+        <!-- Dice modelling -->
+        <div>
+            
+            <div class="diceSide diceSide1">
+
+                <div class = "diceSideDotRow"></div>
+                <div class = "diceSideDotRow"> <i></i>  <i class="fas fa-circle"></i> <i></i> </div>
+                <div class = "diceSideDotRow"></div>
+
+            </div>
+            <div class="diceSide diceSide2">
+
+                <div class = "diceSideDotRowEmptyAdditional"></div>
+
+                <div class = "diceSideDotRow"> <i class="fas fa-circle"></i> <i></i> </div>
+        
+                <div class = "diceSideDotRowEmpty"></div>
+                
+                <div class = "diceSideDotRow"> <i></i> <i class="fas fa-circle"></i> </div>
+            </div>
+            <div class="diceSide diceSide3">
+                <div class = "diceSideDotRow"> <i class="fas fa-circle"></i> <i></i> <i></i> </div>
+                
+                <div class = "diceSideDotRow"> <i></i> <i class="fas fa-circle"></i> <i></i></div>
+               
+                <div class = "diceSideDotRow"> <i></i> <i></i> <i class="fas fa-circle"></i> </div>
+            </div>
+            <div class="diceSide diceSide4">
+
+                <div class = "diceSideDotRowEmptyAdditional"></div>
+                <div class = "diceSideDotRow">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                </div>
+
+                
+                <div class = "diceSideDotRowEmpty"></div>
+            
+
+                <div class = "diceSideDotRow">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+
+            </div>
+            <div class="diceSide diceSide5">
+
+                <div class = "diceSideDotRow">
+                <i class="fas fa-circle"></i>
+                <i></i>
+                <i class="fas fa-circle"></i>
+                </div>
+
+                <div class = "diceSideDotRow">
+                    <i></i>
+                    <i class="fas fa-circle"></i>
+                    <i></i>
+                    </div>
+
+                
+
+                <div class = "diceSideDotRow">
+                <i class="fas fa-circle"></i>
+                <i></i>
+                <i class="fas fa-circle"></i>
+                </div>
+            </div>
+            <div class="diceSide diceSide6">
+
+                <div class = "diceSideDotRowEmptyAdditional"></div>
+
+                <div class = "diceSideDotRow">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+                
+                <div class = "diceSideDotRowEmpty"></div>
+                
+                <div class = "diceSideDotRow">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <button id="diceRoll" onclick="diceRollAnimation()">Roll the dice</button>
+
+        </div>
+
+        <div class = "rightSideOfGame">
+
+        <!-- the grid layout -->
+        <div class="gridLayout"></div>
+
+        <!-- prototype coins -->
+        <div class="coin1"></div>
+        <div class="coin2"></div>
+
+        <!-- snake and ladders -->
+        <div class="ladder ladder1"></div>
+        <img class="ladder1Img" src="ladder1.png">
+
+        <div class="ladder ladder2"></div>
+        <img class="ladder2Img" src="ladder2.png">
+
+        <div class="ladder ladder3"></div>
+        <img class="ladder3Img" src="ladder3.png">
+
+        <div class="ladder ladder4"></div>
+        <img class="ladder4Img" src="ladder4.png">
+
+        <div class="ladder ladder5"></div>
+        <img class="ladder5Img" src="ladder5.png">
+
+        <div class="ladder ladder6"></div>
+        <img class="ladder6Img" src="ladder6.png">
+
+        <div class="snake snake1"></div>
+        <img class="snake1Img" src="snake1.png">
+
+        <div class="snake snake2"></div>
+        <img class="snake2Img" src="snake2.png">
+
+        <div class="snake snake3"></div>
+        <img class="snake3Img" src="snake3.png">
+
+        <div class="snake snake4"></div>
+        <img class="snake4Img" src="snake4.png">
+
+        <div class="snake snake5"></div>
+        <img class="snake5Img" src="snake5.png">
+
+        <div class="snake snake6"></div>
+        <img class="snake6Img" src="snake6.png">
+
+        </div>
+
+    </div>
+
+    <!-- <div id = "footer">
+        <p>with ❤️<br> from Danusshkumar </p>
+    </div> -->
+
+</body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="gameScript.js"></script>
+
+</html>

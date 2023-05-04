@@ -1,0 +1,96 @@
+one who comes first will win --completed
+number(outcome) > balance boxes --completed
+1,5,6 turn won't change else changes --completed
+numbering starts at botton --completed
+Create snakes and ladder pairs and do all the 
+	works accordingly in the pairs --completed
+snakes and ladders prototype design --completed
+dice rolling animation --completed
+disabling dice rolling on animation running --completed
+view port not supporting problem --completed
+Overrepresentation of 2,3,4 in the dice rolling --ignored due to following condition
+set another turn only when number 6 is encountered --completed
+Snake bit and ladder sound --completed
+Dice rolling sound --ignored intentionally
+Default music for entire game --completed
+customising players count --ignored
+From Danusshkumar with heart --completed
+Customising the snake and ladder animation time --completed
+change the css access property for snakes and ladders with nth-child() pseudoclass selector --ignored
+
+view port {
+	add best config with screen size and chrome zoom in %
+	add fn keys for full screen mode
+} --completed
+
+button config {
+	blue text and white background on without hover
+	blue background and white text on hover
+	animation for hover must be exist for 0.5s
+	cursor : pointer
+
+	on disabling the style will be written seperate
+	no animation for enabling and disabling 
+} --completed
+
+other left side alignment --completed
+
+Designing background animation (blue preferred) --completed
+
+customising the movement animation time --ignored bcz it's not neccessary
+
+background customisation --completed
+
+coins prototype design --completed
+
+Assigning name for players --completed
+
+animation for winners --completed
+
+Player winning music --completed
+
+background music must start after names for players are set (customisation in code) --completed
+
+don't forget to enable background and (snake and ladders ) audio --completed
+
+
+Extra learning : 
+
+CSS Animation Tutorial:
+https://youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5
+
+CSS vs JavaScript Animation:
+https://web.dev/css-vs-javascript/#:~:text=Summary%20%23,%2C%20rewind%2C%20or%20slow%20down.
+
+CSS vs JavaScript Animation performance:
+https://web.dev/animations-and-performance/#css-vs-javascript-performance
+
+
+
+
+
+after the outcome 1, encountered, the game will start --incompleted (for dev purpose)
+
+
+ ----------------------------  
+
+Next version 1:
+
+Snake (98 - 17) red --prototype replaced
+Snake (64 - 27) green --prototype replaced
+Snake (66 - 04) brown --prototype replaced
+Snake (33 - 06) pink (rose) --prototype replaced
+Snake (86 - 59) blue --prototype replaced
+Snake (73 - 50) black --prototype replaced
+
+
+Ladder (25 - 82) --prototype replaced
+Ladder (46 - 72) --prototype replaced
+Ladder (40 - 61) --prototype replaced
+Ladder (54 - 65) --prototype replaced
+Ladder (85 - 97) --prototype replaced
+Ladder (48 - 51) 
+		--for dummy purpose
+
+Snake  - 5 - ( 1 - long(8), 2 - medium(4,5), 3 - small(3) ) 
+Ladder - 4 - (1 - long(6), 2 - medium(3,2), 3 - small(1), ) 

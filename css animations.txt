@@ -1,0 +1,174 @@
+Topics to cover:
+
+Transforms
+Transitioms
+Keyframes
+Animation basics
+Web examples
+
+Transforms : 
+
+usecase:
+stretching elements, changing coordinates of the element,
+skew an element or rotating an element
+
+Note : We didn't want element's position to absolute in order to transforms.
+
+all of the transforms will happen with in the CSS property 'transform'.
+
+Functions used in the transform property:
+
+translateX(10px) ==> will move to 10px right
+translateY(), translateZ() also there and 
+translate(1,) ==> will be used for 2d transform
+
+
+scaleX(),scaleY(), scale(x,y) ==> param > 1 (stretch) and param < 1 (shrink)
+Passing 1 value to scale() will do x = param and y = param
+Passing 2 values to scale() will do x = param1 and y = param2
+
+rotateX(),rotateY(),rotateZ() will take 'deg' as a param like 10deg and will rotate with respect to corresponding axis. rotateZ() will have visual effect when compared to rotateX() and rotateY().
+
+function rotate() will rotate with respect to Z-axis. ie rotate the element in clockwise/anti-clockwise direction irrespective of axis. that's why it's rotating with respect to z-axis.
+
+we can actually do chaining of transform in only one line like:
+
+transform : rotateZ() translateY() etc.
+
+Incase we translated the y, but the access point of z is in the original position and the rotation will be done respective to the original position of the z ( previous position ).
+
+This will work in sequential manner. sometimes order of arrangin the transforms also matters.
+
+
+
+
+Transitions : 
+
+It will do transition from one state to another state over a 'set' amount of time.
+
+We may control the whole transition with timing functions and delays.
+Transition wil be done with the css property 'transition'
+
+First when we set
+transition : 1s; ==> will take 1second for transition from one state to another. Ex: normal state to :hover state.
+
+We can specify what property to be included for transition one second.
+ex : background-color 1s; ==> 1s will be applied only for bgColor and not for other transforms.
+
+We can also do control multiple effects with different time like
+transition : background 1s, transform 0.3s;
+
+Third property is delay,
+transition : background 1s, transform 0.3s 1s;
+second transition will wait for 1s for 1st transition to complete
+
+Fourth property is timing function,
+transition : background 1s, transform 0.3s linear;
+==> will do the thing linearly without slow down and speed up
+
+some timing functions:
+linear ==> constant
+ease-in ==> slow start
+ease-out ==> slow end
+ease ==> slow start, fast, slow end (default)
+ease-in-out ==> slow start, slow end
+step-start
+step-end
+steps
+cubic-bezier
+initial
+inherit
+
+
+Keyframes : 
+
+keyframes - the power house of the css animations
+
+like defining a function, keyframe is a defining the css with keyframe name like function name.
+Syntax : 
+
+@keyframes keyFrameName {
+	// our definitions goes here
+}
+
+we have to define some states inside keyframes. It is important to note that they are not element's state but they are animation ( keyframes ) state.
+
+built-in common states are from {} and to {}
+
+we can apply this animation to element by
+animation-name : animationName;
+animation-durartion : animationDuration;
+
+animation-fill-mode decides what should an element do outside the animation window
+
+animation-fill-mode : forwards;
+==> will fills what to happen when animation is completed
+==> by default it's none meaning that it'll comes to its original position
+==> by forwards, it'll apply the forward animation state (to state) to the element after the animation is completed.
+==> by backwards, it'll apply the initial state (from state) to the element before the animation starts.
+==> by both, we can apply both forwards and backwards
+
+animation-delay : 2s; ==> delays the animation
+
+
+Repeating Animations : 
+
+animation-iteration-count : 3;
+==> will run the animation 3 times
+==> infinite keyword is used to animate things infinite times.
+
+Animation direction :
+
+animation-direction:reverse;
+normal ==> normal
+reverse
+alternate ==> goes forwards and backwards
+alternate-reverse ==> goes backwards and forwards
+animation-timing-function : ease(by default)
+
+What is bezier : 
+
+beziers are the curves controlled by points. These beziers are used all over the softwares and UI designing applications.
+Cubic beziers are the beziers with two control points. These control points are nothing but tangent. The curve must be aligned 180deg at that point with tangent.
+
+cubic-bezier(p0,p1,p2,p3) are the cubic bezier for animation speed controls. where p0,p1 are the coordinates of point one and p2,p3 are the coordinates of point two.
+cubic-bezier.com ==> to get the cubic bezier value
+
+Animation short hand methods : 
+
+Pseudo classes : 
+.cloud:nth-child(1){
+}
+
+opacity of the cloud is reduced to look like it's far away.
+
+animation : animationName animationDuration animationFillMode animationIterationCount animationTimingFunctions animationDirection
+
+Caution : if we are mentioning animationDelay, it has to come after animation duration in order to recognise it as delay, bcz of them have same units which is seconds.
+
+Order doesn't matter and it doesn't follow any strict syntax. In most of the cases, order doesn't affect the output.
+
+
+Chaining animations : 
+
+using percentage states on the animation : 
+0% {} and 100% {} will act as a from{} and to{} states.
+
+animation : drive 3s both infinite linear,
+		secondAnimation and its properties here;
+
+transform-origin : 10px 10px ==> will fix the origin or control point for transform which is center by default.
+10px and 10px are like coordinates starting from 0px and 0px.
+
+
+
+
+ 
+
+
+
+
+
+
+
+
