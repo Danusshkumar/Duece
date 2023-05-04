@@ -12,7 +12,6 @@ Duece is a simple and fun snake and ladders game for two players. The goal is to
 - Enter the names of the two players and click on SUBMIT.
 - The first person will start first.
 - On your turn, click on **Roll the Dice** button to roll a pair of dice. 
- about the rules of the game ...
 - Your coin will start moves according to the outcome encountered from the dice you rolled only after outcome **one** encountered.
 - You are given with the another turn if the outcome of your dice is six or else your turn   will came to end and the opponent will play the game.
 - You can roll the dice to move forward, but watch out for the snakes that will drag you down. You can also climb the ladders that will boost you up.
