@@ -34,3 +34,7 @@ I built this project as a personal challenge to create a game with HTML, CSS and
 - CSS3
 - JavaScript
 - jQuery
+
+## Deployment 
+
+  You can see the live website here https://danusshkumar.github.io/Duece
